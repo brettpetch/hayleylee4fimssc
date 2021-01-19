@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;700;800;900&display=swap');
+body {
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.jumbotron {
+    position: relative;
+    background:none;
+}
+.jumbotron:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./img/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
+}
+
+.image {
+    font-weight: 800;
+    background: rgb(240,84,107) url(./img/main.jpg) no-repeat;
+    background-position-x: 0;
+    background-size: cover;
+    height: 80vh;
+    margin-top: -20px;
+    padding-bottom: 50%
+}
+@media only screen and (max-width: 700px) {
+    .image {
+        background: rgb(240, 84, 107) url(./img/main.jpg) no-repeat;
+        background-position-x: 30%;
+        background-size: cover;
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 25%
+    }
+    .image .heading {
+        font-weight: 700;
+        color: white;
+        text-align: left;
+        padding-top: 0px;
+        padding-left: 15%;
+        font-size: 72px;
+    }
+
+    .image .heading2 {
+        color: white;
+        text-align: left;
+        margin-top: -1%;
+        padding-left: 15%;
+        font-size: 14px;
+    }
+
+    .image p {
+        text-align: left;
+        padding-left: 15%;
+        padding-top: 1%;
+
+    }
+    .image p .btn {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+}
+.image .heading {
+    font-size: 84px;
+    color: white;
+    text-align: left;
+    padding-top: 300px;
+    padding-left: 25%;
+}
+
+.image .heading2 {
+    color: white;
+    text-align: left;
+    margin-top: 0.5%;
+    padding-left: 25%;
+    font-size: 24px;
+}
+
+.image p {
+    text-align: left;
+    padding-left: 25%;
+    padding-top: 0%;
+
+}
+.image p .btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.image p .btn:hover {
+    color: rgb(240, 84, 107);
+    border-color: rgb(240, 84, 107);
+}
+.navbar {
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+    font-weight: bolder;
+}
+.navbar-default .navbar-brand {
+    margin-top: -15px;
+    color: rgb(240, 84, 107);
+    transition: all 1s
+}
+.navbar-default .navbar-brand:hover {
+    transition: all 1s;
+    filter: saturate(0);
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    margin: 10px 5px 5px 5px;
+    transition: color 0.25s;
+
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+    color: rgb(240, 84, 107);
+    transition: color .25s;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: rgb(240, 84, 107);
+    font-weight: bolder;
+
+}
+.navbar-default .navbar-toggle {
+    border-color: rgb(240, 84, 107);
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #490d40;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    color: #000;
+    background-color: rgb(240,84,107);
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+    background-color: #490d40;
+}
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+    background-color: #490d40;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+}
+.navbar.solid .navbar-brand {
+    color: white;
+    transition: color 1s ease 0s;
+    transition: all 1s
+}
+.navbar.solid .navbar-nav > li > a {
+    color: white;
+    transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a:hover {
+    color: rgb(240, 84, 107);
+    transition: color 1s ease 0s;
+}
+.content {
+    background-image: url("./img/paper.jpg");
+    background-size: cover;
+    text-align: left;
+    padding-left: 20%;
+}
+.about {
+    color: #490d40;
+
+}
+
+.team {
+}
+.team-person {
+
+}
+
+.about h2 {
+    padding-top: 75px;
+}
+.about p {
+    padding: 20px 80px;
+}
+
+
+
+}
